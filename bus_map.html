@@ -2,11 +2,14 @@
 <html>
 
 <head>
+
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
     <script>
         L_NO_TOUCH = false;
         L_DISABLE_3D = false;
     </script>
+
     <style>
         html,
         body {
@@ -32,7 +35,7 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" />
-    <!-- <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" /> -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css" />
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
@@ -42,7 +45,7 @@
     <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <style>
-        #map_hust {
+        #map_7691c6897df7c9ad6e076f664a5359df {
             position: relative;
             width: 100.0%;
             height: 100.0%;
@@ -55,14 +58,22 @@
         }
     </style>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css" />
 </head>
 
 <body>
-    <div class="folium-map" id="map_hust"></div>
+
+
+    <div class="folium-map" id="map_7691c6897df7c9ad6e076f664a5359df"></div>
+
 </body>
 <script>
-    var map_hust = L.map(
-        "map_hust",
+
+
+    var map_7691c6897df7c9ad6e076f664a5359df = L.map(
+        "map_7691c6897df7c9ad6e076f664a5359df",
         {
             center: [30.513728598247248, 114.43267564904909],
             crs: L.CRS.EPSG3857,
@@ -71,31 +82,703 @@
             preferCanvas: false,
         }
     );
-    var tile_layer = L.tileLayer(
-        "http://webrd02.is.autonavi.com/appmaptile?lang=zh_cn\u0026size=1\u0026scale=1\u0026style=7\u0026x={x}\u0026y={y}\u0026z={z}",
-        { "attribution": "default", "detectRetina": true, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false }
-    ).addTo(map_hust);
-    function mkcircle(pos) {
-        L.circleMarker(
-            pos,
-            { "bubblingMouseEvents": true, "color": "cornflowerblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cornflowerblue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 8, "stroke": false, "weight": 3 }
-        ).addTo(map_hust);
-    }
+
+
+
+
+
+    var tile_layer_f7e5caf0c78736181c7a7c5286ce729f = L.tileLayer(
+        "http://webst03.is.autonavi.com/appmaptile?style=7\u0026x={x}\u0026y={y}\u0026z={z}",
+        { "attribution": "default", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    var locate_control_b39ad9b6521bc1a3e1aba832ba50acb8 = L.control.locate(
+        {}
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+
+    var circle_marker_450c2654320b2631a30247c928a26b58 = L.circleMarker(
+        [30.509439, 114.412133],
+        { "bubblingMouseEvents": true, "color": "#5C7CFE", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5C7CFE", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": false, "weight": 3 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    circle_marker_450c2654320b2631a30247c928a26b58.bindTooltip(
+        `<div>
+                     校大门
+                 </div>`,
+        { "sticky": true }
+    );
+
+
+    var circle_marker_d66ed77959cc4350b2113443a1f332ec = L.circleMarker(
+        [30.512005, 114.412451],
+        { "bubblingMouseEvents": true, "color": "#5C7CFE", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5C7CFE", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": false, "weight": 3 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    circle_marker_d66ed77959cc4350b2113443a1f332ec.bindTooltip(
+        `<div>
+                     图书馆
+                 </div>`,
+        { "sticky": true }
+    );
+
+
+    var circle_marker_3cfcfd110c09b2b5652a3f20c0cb66f6 = L.circleMarker(
+        [30.514513, 114.414904],
+        { "bubblingMouseEvents": true, "color": "#5C7CFE", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5C7CFE", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": false, "weight": 3 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    circle_marker_3cfcfd110c09b2b5652a3f20c0cb66f6.bindTooltip(
+        `<div>
+                     大活
+                 </div>`,
+        { "sticky": true }
+    );
+
+
+    var circle_marker_ce409b9eaf8c43a61ee8abf6c7a85b79 = L.circleMarker(
+        [30.515866, 114.415844],
+        { "bubblingMouseEvents": true, "color": "#5C7CFE", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5C7CFE", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": false, "weight": 3 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    circle_marker_ce409b9eaf8c43a61ee8abf6c7a85b79.bindTooltip(
+        `<div>
+                     集贸
+                 </div>`,
+        { "sticky": true }
+    );
+
+
+    var circle_marker_88bf711d671a9bc268d20592da79d271 = L.circleMarker(
+        [30.515367, 114.42115],
+        { "bubblingMouseEvents": true, "color": "#5C7CFE", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5C7CFE", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": false, "weight": 3 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    circle_marker_88bf711d671a9bc268d20592da79d271.bindTooltip(
+        `<div>
+                     喻园
+                 </div>`,
+        { "sticky": true }
+    );
+
+
+    var circle_marker_2970c20cfcc28707e32fba6788097f40 = L.circleMarker(
+        [30.51515, 114.42302],
+        { "bubblingMouseEvents": true, "color": "#5C7CFE", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5C7CFE", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": false, "weight": 3 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    circle_marker_2970c20cfcc28707e32fba6788097f40.bindTooltip(
+        `<div>
+                     华科大社区站
+                 </div>`,
+        { "sticky": true }
+    );
+
+
+    var circle_marker_a44858b96e575920fa6ff4a03386ea6a = L.circleMarker(
+        [30.514675, 114.427155],
+        { "bubblingMouseEvents": true, "color": "#5C7CFE", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5C7CFE", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": false, "weight": 3 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    circle_marker_a44858b96e575920fa6ff4a03386ea6a.bindTooltip(
+        `<div>
+                     东九
+                 </div>`,
+        { "sticky": true }
+    );
+
+
+    var circle_marker_aa53edd439416a99ad9284bb41d47654 = L.circleMarker(
+        [30.514082, 114.432318],
+        { "bubblingMouseEvents": true, "color": "#5C7CFE", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5C7CFE", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": false, "weight": 3 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    circle_marker_aa53edd439416a99ad9284bb41d47654.bindTooltip(
+        `<div>
+                     韵苑
+                 </div>`,
+        { "sticky": true }
+    );
+
+
+    var circle_marker_e912387068a84e91bb7f977dd86b4090 = L.circleMarker(
+        [30.513446, 114.435513],
+        { "bubblingMouseEvents": true, "color": "#5C7CFE", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5C7CFE", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": false, "weight": 3 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    circle_marker_e912387068a84e91bb7f977dd86b4090.bindTooltip(
+        `<div>
+                     爱因斯坦广场
+                 </div>`,
+        { "sticky": true }
+    );
+
+
+    var circle_marker_a691cf8e1f03ac0ebbb04e6bc7dfcbd8 = L.circleMarker(
+        [30.511045, 114.434443],
+        { "bubblingMouseEvents": true, "color": "#5C7CFE", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5C7CFE", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": false, "weight": 3 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    circle_marker_a691cf8e1f03ac0ebbb04e6bc7dfcbd8.bindTooltip(
+        `<div>
+                     软件学院
+                 </div>`,
+        { "sticky": true }
+    );
+
+
+    var circle_marker_6cb777d1fdbd07a0a7e1fb41faa4c3bb = L.circleMarker(
+        [30.510499, 114.434376],
+        { "bubblingMouseEvents": true, "color": "#5C7CFE", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5C7CFE", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": false, "weight": 3 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    circle_marker_6cb777d1fdbd07a0a7e1fb41faa4c3bb.bindTooltip(
+        `<div>
+                     生命学院
+                 </div>`,
+        { "sticky": true }
+    );
+
+
+    var circle_marker_a212dcbc5ccd874ae01ad1ad1d17fb76 = L.circleMarker(
+        [30.5080882, 114.433222],
+        { "bubblingMouseEvents": true, "color": "#5C7CFE", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5C7CFE", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": false, "weight": 3 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    circle_marker_a212dcbc5ccd874ae01ad1ad1d17fb76.bindTooltip(
+        `<div>
+                     新国光站
+                 </div>`,
+        { "sticky": true }
+    );
+
+
+    var circle_marker_4d46f71dc842a5fb94055b58e9b06a0b = L.circleMarker(
+        [30.50858, 114.431664],
+        { "bubblingMouseEvents": true, "color": "#5C7CFE", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5C7CFE", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": false, "weight": 3 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    circle_marker_4d46f71dc842a5fb94055b58e9b06a0b.bindTooltip(
+        `<div>
+                     校医院（东）
+                 </div>`,
+        { "sticky": true }
+    );
+
+
+    var circle_marker_81918e1c8b23837608a30c244d5c52a9 = L.circleMarker(
+        [30.510574, 114.431912],
+        { "bubblingMouseEvents": true, "color": "#5C7CFE", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5C7CFE", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": false, "weight": 3 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    circle_marker_81918e1c8b23837608a30c244d5c52a9.bindTooltip(
+        `<div>
+                     图书馆（东）
+                 </div>`,
+        { "sticky": true }
+    );
+
+
+    var circle_marker_428e182b18f1673d878a45a3905dd856 = L.circleMarker(
+        [30.513522, 114.4323],
+        { "bubblingMouseEvents": true, "color": "#5C7CFE", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5C7CFE", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": false, "weight": 3 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    circle_marker_428e182b18f1673d878a45a3905dd856.bindTooltip(
+        `<div>
+                     韵苑（新）
+                 </div>`,
+        { "sticky": true }
+    );
+
+
+    var circle_marker_6abb1ad95a4df5a35da2c9a478ac1b72 = L.circleMarker(
+        [30.514081, 114.432317],
+        { "bubblingMouseEvents": true, "color": "#5C7CFE", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5C7CFE", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": false, "weight": 3 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    circle_marker_6abb1ad95a4df5a35da2c9a478ac1b72.bindTooltip(
+        `<div>
+                     韵苑适配点
+                 </div>`,
+        { "sticky": true }
+    );
+
+
+    var poly_line_6103499fe5840353da2e3d21b14bc48a = L.polyline(
+        [[30.509439, 114.412133], [30.509374, 114.412238], [30.512005, 114.412451], [30.513295, 114.412619], [30.513105, 114.414746], [30.514513, 114.414904], [30.514905, 114.41497], [30.515963, 114.415096], [30.515866, 114.415844], [30.515737, 114.417595], [30.515553, 114.419479], [30.515367, 114.42115], [30.51515, 114.42302], [30.514792, 114.426251], [30.514675, 114.427155], [30.514082, 114.432318], [30.513885, 114.434278], [30.513784, 114.435521], [30.513446, 114.435513], [30.512232, 114.435362], [30.512309, 114.434582], [30.511045, 114.434443], [30.510499, 114.434376], [30.510132, 114.434319], [30.509752, 114.433125], [30.5080882, 114.433222], [30.508051, 114.433174], [30.507736, 114.432214], [30.507801, 114.431607], [30.50858, 114.431664], [30.510574, 114.431912], [30.513522, 114.4323], [30.514081, 114.432317]],
+        { "bubblingMouseEvents": true, "color": "#5C7CFE", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#5C7CFE", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 7.0 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    var circle_marker_7ad724bc3596ce57852083b2b19e8410 = L.circleMarker(
+        [30.514082, 114.432318],
+        { "bubblingMouseEvents": true, "color": "#40D6BD", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#40D6BD", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": false, "weight": 3 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    circle_marker_7ad724bc3596ce57852083b2b19e8410.bindTooltip(
+        `<div>
+                     韵苑
+                 </div>`,
+        { "sticky": true }
+    );
+
+
+    var circle_marker_8844c03876f36f6ecf9e883b254a1601 = L.circleMarker(
+        [30.514675, 114.427155],
+        { "bubblingMouseEvents": true, "color": "#40D6BD", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#40D6BD", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": false, "weight": 3 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    circle_marker_8844c03876f36f6ecf9e883b254a1601.bindTooltip(
+        `<div>
+                     东九
+                 </div>`,
+        { "sticky": true }
+    );
+
+
+    var circle_marker_fdb788ba522d025acda9d92093bca43c = L.circleMarker(
+        [30.51515, 114.42302],
+        { "bubblingMouseEvents": true, "color": "#40D6BD", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#40D6BD", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": false, "weight": 3 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    circle_marker_fdb788ba522d025acda9d92093bca43c.bindTooltip(
+        `<div>
+                     华科大社区站
+                 </div>`,
+        { "sticky": true }
+    );
+
+
+    var circle_marker_95406a63d0d3a0c436c478a6f0f5c019 = L.circleMarker(
+        [30.515367, 114.42115],
+        { "bubblingMouseEvents": true, "color": "#40D6BD", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#40D6BD", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": false, "weight": 3 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    circle_marker_95406a63d0d3a0c436c478a6f0f5c019.bindTooltip(
+        `<div>
+                     喻园
+                 </div>`,
+        { "sticky": true }
+    );
+
+
+    var circle_marker_681d0740d17eaafcea4b17ea0e952bf2 = L.circleMarker(
+        [30.512823621961804, 114.41752902560764],
+        { "bubblingMouseEvents": true, "color": "#40D6BD", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#40D6BD", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": false, "weight": 3 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    circle_marker_681d0740d17eaafcea4b17ea0e952bf2.bindTooltip(
+        `<div>
+                     机械大楼
+                 </div>`,
+        { "sticky": true }
+    );
+
+
+    var circle_marker_cfc3f062db8fc7f973bd5e79ba41ed24 = L.circleMarker(
+        [30.513319227430557, 114.41211371527778],
+        { "bubblingMouseEvents": true, "color": "#40D6BD", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#40D6BD", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": false, "weight": 3 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    circle_marker_cfc3f062db8fc7f973bd5e79ba41ed24.bindTooltip(
+        `<div>
+                     科技楼
+                 </div>`,
+        { "sticky": true }
+    );
+
+
+    var circle_marker_00a94fa5771327463472f55bee1ba3aa = L.circleMarker(
+        [30.513753, 114.407955],
+        { "bubblingMouseEvents": true, "color": "#40D6BD", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#40D6BD", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": false, "weight": 3 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    circle_marker_00a94fa5771327463472f55bee1ba3aa.bindTooltip(
+        `<div>
+                     汉口银行
+                 </div>`,
+        { "sticky": true }
+    );
+
+
+    var circle_marker_17ec7bdad9cf5553c78baeed2356881d = L.circleMarker(
+        [30.513509928385417, 114.40578314887152],
+        { "bubblingMouseEvents": true, "color": "#40D6BD", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#40D6BD", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": false, "weight": 3 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    circle_marker_17ec7bdad9cf5553c78baeed2356881d.bindTooltip(
+        `<div>
+                     紫菘
+                 </div>`,
+        { "sticky": true }
+    );
+
+
+    var poly_line_f2f91ec63ade824f8902621f488f9f24 = L.polyline(
+        [[30.514082, 114.432318], [30.514675, 114.427155], [30.514792, 114.426251], [30.51515, 114.42302], [30.515367, 114.42115], [30.515553, 114.419479], [30.514471, 114.419377], [30.512638, 114.419149], [30.512823621961804, 114.41752902560764], [30.513105, 114.414746], [30.513295, 114.412619], [30.513319227430557, 114.41211371527778], [30.513415, 114.410787], [30.513709, 114.410062], [30.513753, 114.407955], [30.513509928385417, 114.40578314887152]],
+        { "bubblingMouseEvents": true, "color": "#40D6BD", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#40D6BD", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 7.0 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    var circle_marker_70be6fc8790126861e30a7023b794b03 = L.circleMarker(
+        [30.515367, 114.42115],
+        { "bubblingMouseEvents": true, "color": "#FAC54B", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FAC54B", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": false, "weight": 3 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    circle_marker_70be6fc8790126861e30a7023b794b03.bindTooltip(
+        `<div>
+                     喻园
+                 </div>`,
+        { "sticky": true }
+    );
+
+
+    var circle_marker_1f6c00cfcda52ec6717cc3eef1efbf29 = L.circleMarker(
+        [30.516934950086807, 114.41510172526041],
+        { "bubblingMouseEvents": true, "color": "#FAC54B", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FAC54B", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": false, "weight": 3 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    circle_marker_1f6c00cfcda52ec6717cc3eef1efbf29.bindTooltip(
+        `<div>
+                     校医院
+                 </div>`,
+        { "sticky": true }
+    );
+
+
+    var circle_marker_530c0d53c0ef0f15e717f31859c33b2c = L.circleMarker(
+        [30.517313, 114.411298],
+        { "bubblingMouseEvents": true, "color": "#FAC54B", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FAC54B", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": false, "weight": 3 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    circle_marker_530c0d53c0ef0f15e717f31859c33b2c.bindTooltip(
+        `<div>
+                     西二路口站
+                 </div>`,
+        { "sticky": true }
+    );
+
+
+    var circle_marker_115e5dcd147e97046e89129476598780 = L.circleMarker(
+        [30.516482, 114.408519],
+        { "bubblingMouseEvents": true, "color": "#FAC54B", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FAC54B", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": false, "weight": 3 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    circle_marker_115e5dcd147e97046e89129476598780.bindTooltip(
+        `<div>
+                     高层小区
+                 </div>`,
+        { "sticky": true }
+    );
+
+
+    var circle_marker_52e86a61fe21cca515b640092c488e66 = L.circleMarker(
+        [30.514418, 114.410935],
+        { "bubblingMouseEvents": true, "color": "#FAC54B", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FAC54B", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": false, "weight": 3 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    circle_marker_52e86a61fe21cca515b640092c488e66.bindTooltip(
+        `<div>
+                     院士楼
+                 </div>`,
+        { "sticky": true }
+    );
+
+
+    var circle_marker_1d63efe158281e54e1a8b0490a87c390 = L.circleMarker(
+        [30.513319227430557, 114.41211371527778],
+        { "bubblingMouseEvents": true, "color": "#FAC54B", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FAC54B", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": false, "weight": 3 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    circle_marker_1d63efe158281e54e1a8b0490a87c390.bindTooltip(
+        `<div>
+                     科技楼
+                 </div>`,
+        { "sticky": true }
+    );
+
+
+    var circle_marker_919423ebbdd60beb5dd52e6d00c186d0 = L.circleMarker(
+        [30.512005, 114.412451],
+        { "bubblingMouseEvents": true, "color": "#FAC54B", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FAC54B", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": false, "weight": 3 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    circle_marker_919423ebbdd60beb5dd52e6d00c186d0.bindTooltip(
+        `<div>
+                     图书馆
+                 </div>`,
+        { "sticky": true }
+    );
+
+
+    var circle_marker_037885a6911ff3d324545ec88361466a = L.circleMarker(
+        [30.509439, 114.412133],
+        { "bubblingMouseEvents": true, "color": "#FAC54B", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FAC54B", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": false, "weight": 3 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    circle_marker_037885a6911ff3d324545ec88361466a.bindTooltip(
+        `<div>
+                     校大门
+                 </div>`,
+        { "sticky": true }
+    );
+
+
+    var poly_line_99c026c6252529d1abfc7f3c6766aadd = L.polyline(
+        [[30.515367, 114.42115], [30.515737, 114.417595], [30.516679, 114.417673], [30.516934950086807, 114.41510172526041], [30.517313, 114.411298], [30.516318, 114.411134], [30.516482, 114.408519], [30.515456, 114.408202], [30.515229, 114.41104], [30.514418, 114.410935], [30.513415, 114.410787], [30.513319227430557, 114.41211371527778], [30.513295, 114.412619], [30.512005, 114.412451], [30.509374, 114.412238], [30.509439, 114.412133]],
+        { "bubblingMouseEvents": true, "color": "#FAC54B", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FAC54B", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 7.0 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    var circle_marker_31d7f8e506435855b3c36cd81a66cb78 = L.circleMarker(
+        [30.509219, 114.408467],
+        { "bubblingMouseEvents": true, "color": "#f09490", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f09490", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": false, "weight": 3 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    circle_marker_31d7f8e506435855b3c36cd81a66cb78.bindTooltip(
+        `<div>
+                     南三门站
+                 </div>`,
+        { "sticky": true }
+    );
+
+
+    var circle_marker_d27a9f821132278bc447642d9fd044d0 = L.circleMarker(
+        [30.509439, 114.412133],
+        { "bubblingMouseEvents": true, "color": "#f09490", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f09490", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": false, "weight": 3 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    circle_marker_d27a9f821132278bc447642d9fd044d0.bindTooltip(
+        `<div>
+                     校大门
+                 </div>`,
+        { "sticky": true }
+    );
+
+
+    var circle_marker_04d946aa3518ff4badd086f8e94deeb6 = L.circleMarker(
+        [30.511036, 114.414789],
+        { "bubblingMouseEvents": true, "color": "#f09490", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f09490", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": false, "weight": 3 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    circle_marker_04d946aa3518ff4badd086f8e94deeb6.bindTooltip(
+        `<div>
+                     东二站
+                 </div>`,
+        { "sticky": true }
+    );
+
+
+    var circle_marker_cfb823c5d274522f0e038c68b37844db = L.circleMarker(
+        [30.510767, 114.418102],
+        { "bubblingMouseEvents": true, "color": "#f09490", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f09490", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": false, "weight": 3 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    circle_marker_cfb823c5d274522f0e038c68b37844db.bindTooltip(
+        `<div>
+                     中心操场
+                 </div>`,
+        { "sticky": true }
+    );
+
+
+    var circle_marker_ce4104e2cc2738d800a3ae4a69169149 = L.circleMarker(
+        [30.510651, 114.42082],
+        { "bubblingMouseEvents": true, "color": "#f09490", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f09490", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": false, "weight": 3 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    circle_marker_ce4104e2cc2738d800a3ae4a69169149.bindTooltip(
+        `<div>
+                     沁苑
+                 </div>`,
+        { "sticky": true }
+    );
+
+
+    var circle_marker_26bbf0b2b0d20b202570d8c944c4ae38 = L.circleMarker(
+        [30.513383, 114.42112],
+        { "bubblingMouseEvents": true, "color": "#f09490", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f09490", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": false, "weight": 3 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    circle_marker_26bbf0b2b0d20b202570d8c944c4ae38.bindTooltip(
+        `<div>
+                     博士公寓
+                 </div>`,
+        { "sticky": true }
+    );
+
+
+    var circle_marker_5b841d94182dd73ec0babe274734f755 = L.circleMarker(
+        [30.515367, 114.42115],
+        { "bubblingMouseEvents": true, "color": "#f09490", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f09490", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": false, "weight": 3 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    circle_marker_5b841d94182dd73ec0babe274734f755.bindTooltip(
+        `<div>
+                     喻园
+                 </div>`,
+        { "sticky": true }
+    );
+
+
+    var circle_marker_6ca847bf3eb6be090fbf6cd6a9cd6707 = L.circleMarker(
+        [30.515866, 114.415844],
+        { "bubblingMouseEvents": true, "color": "#f09490", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f09490", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": false, "weight": 3 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    circle_marker_6ca847bf3eb6be090fbf6cd6a9cd6707.bindTooltip(
+        `<div>
+                     集贸
+                 </div>`,
+        { "sticky": true }
+    );
+
+
+    var circle_marker_9c62c524da19e49c838b8413454cfb94 = L.circleMarker(
+        [30.516052, 114.413198],
+        { "bubblingMouseEvents": true, "color": "#f09490", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f09490", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": false, "weight": 3 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    circle_marker_9c62c524da19e49c838b8413454cfb94.bindTooltip(
+        `<div>
+                     幼儿园站
+                 </div>`,
+        { "sticky": true }
+    );
+
+
+    var circle_marker_88e484d194773676cc84ec91193786ea = L.circleMarker(
+        [30.516482, 114.408519],
+        { "bubblingMouseEvents": true, "color": "#f09490", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f09490", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": false, "weight": 3 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    circle_marker_88e484d194773676cc84ec91193786ea.bindTooltip(
+        `<div>
+                     高层小区
+                 </div>`,
+        { "sticky": true }
+    );
+
+
+    var circle_marker_ec856df45ebe06829fe71dd42aace033 = L.circleMarker(
+        [30.514728, 114.407395],
+        { "bubblingMouseEvents": true, "color": "#f09490", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f09490", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": false, "weight": 3 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    circle_marker_ec856df45ebe06829fe71dd42aace033.bindTooltip(
+        `<div>
+                     西区超市
+                 </div>`,
+        { "sticky": true }
+    );
+
+
+    var circle_marker_404f8c63a4c6b925c91d4257d368f8e8 = L.circleMarker(
+        [30.509219, 114.408467],
+        { "bubblingMouseEvents": true, "color": "#f09490", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f09490", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": false, "weight": 3 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    circle_marker_404f8c63a4c6b925c91d4257d368f8e8.bindTooltip(
+        `<div>
+                     南三门站
+                 </div>`,
+        { "sticky": true }
+    );
+
+
+    var poly_line_c1e4bd9e6acef6344a33659cf7199ace = L.polyline(
+        [[30.509219, 114.408467], [30.508693, 114.408511], [30.508952, 114.41025], [30.50955, 114.410315], [30.509439, 114.412133], [30.509374, 114.412238], [30.511231, 114.412463], [30.511036, 114.414789], [30.510767, 114.418102], [30.510547, 114.420768], [30.510651, 114.42082], [30.513383, 114.42112], [30.515367, 114.42115], [30.515366, 114.42114], [30.515866, 114.415844], [30.516052, 114.413198], [30.516482, 114.408519], [30.515507, 114.408305], [30.515594, 114.407211], [30.514728, 114.407395], [30.513744, 114.40754], [30.509219, 114.408467], [30.509218, 114.408466]],
+        { "bubblingMouseEvents": true, "color": "#f09490", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#f09490", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 7.0 }
+    ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+
+
+    // function mkcircle(pos) {
+    //     L.circleMarker(
+    //         pos,
+    //         { "bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 8, "stroke": false, "weight": 3 }
+    //     ).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+    // }
+
+    var bus_data_prv;
+
+    var buses_marker_list;
+
     function reload_pos() {
         fetch('https://api.hust.online/hustbus/api/v1/bus/all').then(function (response) {
             response.json().then(function (bus_data) {
-                for (bus in bus_data.data) {
-                    let pos = [];
-                    pos.push(bus_data.data[bus].lat);
-                    pos.push(bus_data.data[bus].lon);
-                    mkcircle(pos);
+                for(marker in buses_marker_list){
+                    map_7691c6897df7c9ad6e076f664a5359df.removeLayer(buses_marker_list[marker])
                 }
+                buses_marker_list = [];
+                for (bus in bus_data.data) {
+                    if (bus_data.data[bus].lat != bus_data_prv.data[bus].lat || bus_data.data[bus].lon != bus_data_prv.data[bus].lon) {
+                        let pos = [];
+                        pos.push(bus_data.data[bus].lat);
+                        pos.push(bus_data.data[bus].lon);
+                        //mkcircle(pos);
+                        buses_marker_list.push(L.marker(pos).bindPopup(bus_data.data[bus].name + '车'));
+                    }
+                }
+                L.layerGroup(buses_marker_list).addTo(map_7691c6897df7c9ad6e076f664a5359df);
+                bus_data_prv = bus_data;
             });
         }).catch(function (e) {
             console.log("Oops, error");
         });
     }
-    self.setInterval("reload_pos()",1000);
+    fetch('https://api.hust.online/hustbus/api/v1/bus/all').then(function (response) {
+        response.json().then(function (bus_data) {
+            bus_data_prv = bus_data;
+        })
+    });
+    self.setInterval("reload_pos()", 2000);
 
 
 </script>
